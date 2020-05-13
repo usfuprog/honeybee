@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html style="background-color: #badbad;">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="scriptFolder/script.js"></script>
+</head>
+
+<body style="background-color: #eef059; border: 6px ridge grey; padding: 16px; font-weight: bolder;">
+	<div id="txt3"></div>
+	<script>
+		var uri = location.search;
+		var str = (/=\d+/.exec(uri)).toString();
+		var num = parseInt(str.replace('=', ''));
+		
+		var info=getLorem(num);
+		document.write(info);
+	</script>
+</body>
+
+</html>

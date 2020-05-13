@@ -1,0 +1,426 @@
+html
+{
+	background-color: #badbad;
+	padding: 6px;
+}
+
+body
+{
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	border-radius: 25px;
+
+	background: -moz-linear-gradient(left, yellow, RGB(32, 255, 32));
+	background: -o-linear-gradient(right, yellow, RGB(32, 255, 32));
+	background: -webkit-linear-gradient(left, yellow, RGB(32, 255, 32));
+	background: linear-gradient(right, yellow, RGB(32, 255, 32));
+}
+
+#conteiner
+{
+	margin: 0 auto;
+/*	height: 50%;*/
+	margin-bottom: 10px;
+	max-width: 2000px;
+	overflow: hidden;
+}
+
+#td3
+{
+/*	border: 2px solid white;*/
+
+}
+
+#txt1
+{
+/*	border: 2px solid red;*/
+/*	padding-bottom: 12px;*/
+}
+
+#txt1, #txt2
+{
+/*	padding: 2%;*/
+}
+
+#txt2
+{
+
+}
+
+#firstPart
+{
+	width: 33%;
+	float: left;
+	margin-top: 50px;
+}
+
+#secondPart
+{
+
+	float: left;
+	width: 34%;
+}
+
+#thirdPart
+{
+	width: 33%;
+	float: right;
+	margin-top: 50px;
+}
+
+.mainMenu
+{
+	margin: 0 auto;
+	width: 791px;
+	height: 50px;
+}
+
+#copyright
+{
+	text-align: center;
+	color: #534235;
+	padding: 2%;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+    ul, li
+    {
+	    padding: 0;
+	    z-index: 500;
+    }	    
+    
+    ul li
+    {
+		display: block;
+		width: 150px;
+		float: left;
+		border: 2px outset grey;
+		text-align: center;
+		background-color: white;
+    }
+        
+    ul li:hover
+    {
+	    font-size: 22px;
+    }
+    
+    li ul
+    {
+	    display: none;
+    }
+    
+    ul li:hover ul
+    {
+	    display: block;
+	    position: absolute;
+	    margin-top: 0.1%;
+	    margin-left: -2px;
+	    background-color: white;
+	}
+    
+    li ul li
+    {
+	    float: none;
+    }
+
+    ul span
+    {
+    	text-decoration: none;
+		font-family: Verdana;
+		font-style: italic;
+		
+		color: #123456;
+	    font-weight: bolder;
+	}
+	
+	body>div>.mainMenu>ul
+	{
+		text-align: center;
+	}
+	
+	ul li ul li ul li
+	{
+		display: none;
+	}
+	
+	ul li ul .superInnerMenuBase:hover li
+	{
+		display: block;
+		width: 150px;
+		background-color: white;
+		z-index: 500;
+	}
+	
+	ul li ul li ul
+	{
+/*		width: 0px;*/
+	}
+		
+	ul li ul li .superInnerMenuPath
+	{
+/*		margin-left: 6.87em;*/
+/*		margin-top: -38.4%;*/
+		margin-left: 151.5px;
+/*		margin-top: -58px;*/
+		margin-top: -37%;
+	}
+/*----------------------------------------------------------------------------------------------------------*/
+
+	#centralTable
+	{
+		width: 100%;
+		border-radius: 100px;
+/*		text-align: center;*/
+/*		height: 50pt;*/
+		min-width: 900px;
+		border-collapse: collapse;
+		margin-top: 10px;
+	}
+	
+	td
+	{
+/*		border: 4px solid black;*/
+	}
+		
+	#td4
+	{
+		width: 33%;
+		border-left: 2px solid grey;
+		border-right: 2px solid grey;
+	}
+		
+	#td1
+	{
+		text-align: left;
+	}
+	
+	#td2
+	{
+		text-align: left;
+		width: 24%;
+		border-right: 2px solid grey;
+		border-left: 2px solid grey;
+	}
+	
+	#onePar2Div_part1
+	{
+/*		height: 190px;*/
+/*		border: 2px solid red;*/
+		overflow: hidden;
+		padding: 0 16px 0 16px;
+	}
+	
+	#td3 #onePar2Div_part1
+	{
+/*		padding: 1px;*/
+		text-align: center;
+/*		overflow: scroll;*/
+	}
+		
+	#anchorsToNews
+	{
+		overflow: auto;
+	}
+	
+	#anchorsToNews p
+	{
+		margin: 4px;
+		background-color: #688123;
+	}
+	
+	.superButton
+	{
+		text-decoration: none;
+		color: green;
+		border: 3px solid silver;
+		text-align: center;
+		width: 20px;
+		height: 20px;
+		border-radius: 200px;
+		padding: 32px 32px 32px 32px;
+		background: #e29903;
+		display: block;
+	}
+	
+	
+	.superButton:hover
+	{
+		color: white;
+		background-color: RGB(128, 16, 128);
+		
+	}
+
+	.superButtonLeft
+	{
+		float: left;
+	}
+	
+
+	.superButtonRight
+	{
+		float: right;
+	}
+	
+	.newsBlock
+	{
+		border: 1px solid silver;
+		padding: 16px;
+	}
+	
+	#textOnTop
+	{
+		margin-left: 128px;
+		margin-right: 128px;
+		color: black;
+		font-style: italic;
+		text-align: center;
+
+	}
+		
+	#onePar2Div_part1, #menuDiv, #anchorsToNews
+	{
+		height: 555px;
+/*		border: 2px solid yellow;*/
+	}	
+	
+	#td3:hover #onePar2Div_part1
+	{
+		cursor: pointer;
+		background-color: #eef059;
+/*		border: 1px outset silver;*/
+	}
+
+	#td5:hover #onePar2Div_part2
+	{
+		cursor: default;
+		background-color: #eef059;
+/*		border: 1px outset silver;*/
+	}
+	
+	#td3:hover #txt1
+	{
+		color: black;
+	}
+
+	#td5:hover #txt2
+	{
+		color: black;
+	}
+
+	#txt1, #txt2
+	{
+		color: RGB(64, 64, 255);
+		font-weight: bolder;
+	}
+	
+	#onePar2Div_part2
+	{
+		padding-bottom: 32px;
+		text-align: left;
+		padding: 16px;
+		padding: 0 16px 0 16px;
+	}
+	
+	.honeyBee
+	{
+		position: absolute;
+		left: 120px;	
+		top: 40px;
+/*		border: 1px solid black;*/
+		border-radius: 10px;
+		background-image: url(imgFolder/honeybee.png);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		width: 22px;
+		height: 11px;
+	}
+	
+	.menuBee
+	{
+		text-align: center;
+/*		margin-top: 444px;*/
+		border-top: 4px double white;
+		border-width: medium;
+		margin-top: 32px;
+/*		height: 200px;
+		border: 2px solid red;
+*/
+	}
+	
+	.menuBee input
+	{
+		width: 222px;
+		height: 24px;
+		font-style: italic;
+
+		cursor: pointer;
+		font-weight: bolder;
+		margin-top: 32px;
+	}
+	
+	#firButton
+	{
+		color: red;
+		font-family: Verdana;
+		border: 1px groove grey;
+	}
+	
+	#secButton
+	{
+		color: green;
+		font-family: Segoe Script, Verdana;
+		border: 1px groove grey;
+	}
+	
+	.imgInText
+	{
+		padding: 4px;
+		border: 1px solid grey;
+		background-color: white;
+		margin: 2px;
+		border-radius: 2px;
+	}
+	
+	#imageOfHoney
+	{
+		float: left;
+		padding: 10px;
+	}
+	 	 
+	 #pos1
+	 {
+		 margin: 55px 0 0 60px;
+	 }
+	 
+	 #pos2
+	 {
+		 margin: 70px 0 0 50px;
+	 }
+	 
+	 #pos3
+	 {
+		 margin: 70px 0 0 80px;
+	 }
+	 
+	 .pos4
+	 {
+		 position: absolute;
+		 margin: 55px 0 0 60px;
+		 visibility: visible;
+	 }
+	 
+	 #startPos
+	 {
+/*		 border: 1px solid green;
+		 width: 1px;
+		 height: 1px;
+/*		 position: normal;*/
+	 }
+	 
+	 li span, #menuDiv span
+	 {
+		 cursor: pointer;
+	 }
+	 

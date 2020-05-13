@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Honey, sweet honey ...</title>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="scriptFolder/script.js"></script>
+    <script type="text/javascript" src="scriptFolder/honeyBeeObjectScript.js"></script>
+    <script type="text/javascript" src="scriptFolder/1p2d.js"></script>
+    <script src="jq/external/jquery/jquery.js"></script>
+    <script src="jq/jquery-ui.js"></script>
+    <link href="jq/jquery-ui.css" rel="stylesheet">
+
+    <link rel='stylesheet' type='text/css' href="indexStyle.css" />
+     <script>
+         $(
+	function () {
+                 
+             $('.superButton').on("click", click_superButton);
+             $("#anchorsToNews a").on("click", function(event){event.preventDefault(); defaultNoneDone();});
+             $(".mainMenu span").on("click", defaultNoneDone);
+             $("#menuDiv span").on("click", changeStyle);
+         }
+                 );
+
+         function click_superButton(event) {
+//             document.getElementById('img').attributes['src'].value = 'imgFolder/' + 'honey01' + '.jpg';
+             var index=event.target.id;
+
+             var num1=index.charAt(index.length-2);
+             var num2=index.charAt(index.length-1);
+
+             $('#txt1').text(get_text(num1+num2+""));
+             $("#onePar2Div_part2 #txt2").text("");
+             correction1p2d();
+             
+             return false;
+         }
+    </script>
+  </head>
+
+<body onload="goNow()"; onresize="correction1p2d()";>
+
+	<div id="conteiner">
+
+		<div class="mainMenu">
+			<ul>
+				<li>
+					<span>Menu1</span>
+					<ul>
+						<li><span>Inner menu1</span></li>
+					</ul>
+				</li>
+		
+				
+				<li>
+					<span>Menu2</span>
+					<ul>
+						<li><span>Inner menu2</span></li>
+						<li><span>Inner menu3</span></li>
+					</ul>
+				</li>
+
+				<li>
+					<span>Menu3</span>
+					<ul>
+						<li><span>Inner menu4</span></li>
+						<li><span>Inner menu5</span></li>
+					</ul>
+				</li>
+
+				<li>
+					<span>Menu4</span>
+					<ul>
+						<li><span>Inner menu6</span></li>
+						<li><span>Inner menu7</span></li>
+					</ul>
+				</li>
+
+				<li>
+					<span>Menu5</span>
+					<ul>
+						<li><span>Inner menu8</span></li>
+						<li>
+							<span>Inner menu9</span>
+						</li>
+						<li><span>Inner menu10</span></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+    	<table id="centralTable">
+    	<tbody>
+    	 <tr>
+	    	 <td colspan=3 id="td1">
+
+	    	 	<img src="imgFolder/honeyheader.png" alt="image of honey" id="imageOfHoney" />
+
+		    	 <div id="textOnTop">
+		    	 	<p>Sunt iis offendit se multos, ubi tamen lorem ab senserit, sint excepteur ab 
+						ullamco quo se fore cillum se cupidatat. Aliquip sint mentitum se senserit 
+						multos commodo in si irure cupidatat excepteur, occaecat aliqua consequat 
+						vidisse. Quorum laboris offendit, ullamco quae appellat pariatur. Si quem 
+						fabulas. Excepteur illum nostrud ut deserunt varias eiusmod arbitror hic quo ex 
+						aute mandaremus id aliquip reprehenderit ab litteris. Ingeniis o quorum 
+						singulis, eu firmissimum, non fugiat laboris distinguantur an magna 
+						mandaremus iudicem. Litteris ea labore.
+					</p>
+		    	 </div>
+	    	 </td>
+    	 </tr>
+    	<tr>
+    	 <td id="td2">
+    	 
+    	 <div id="menuDiv">
+        		<div class="superButtonLeft">
+	        		<span class="superButton" id="honey01">value 1</span>
+	        		<span class="superButton" id="honey02">value 2</span>
+	        		<span class="superButton" id="honey03">value 3</span>
+	        		<span class="superButton" id="honey04">value 4</span>
+	        		<span class="superButton" id="honey05">value 5</span>
+	        		<span class="superButton" id="honey06">value 6</span>
+        		</div>
+    	     	 
+        		<div class="superButtonRight">
+	        		<span class="superButton" id="honey07">value 7</span>
+	        		<span class="superButton" id="honey08">value 8</span>
+	        		<span class="superButton" id="honey09">value 9</span>
+	        		<span class="superButton" id="honey10">value 10</span>
+	        		<span class="superButton" id="honey11">value 11</span>
+	        		<span class="superButton" id="honey12">value 12</span>
+        		</div>
+        
+        </div>
+
+    	 </td>
+        
+    	 <td id="td3" onclick="defaultNoneDone(getArticleNumber()); ">
+	    	 <div id="onePar2Div_part1">
+	    	 	<div id="startPos"></div>
+	    	 	
+					<img src="imgFolder/honey01.jpg" alt="xxx" id="img" height="256" />
+				<div id="txt1"></div>
+			</div>    	 
+    	 </td>
+        
+    	 <td id="td4">
+    	 	<div id="anchorsToNews">
+    	 		<p class="newsBlock"><a href="#">News1 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News2 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News3 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News4 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News5 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News6 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News7 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News8 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News9 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+    	 		<p class="newsBlock"><a href="#">News10 </a> - text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text, text ...</p>
+
+    	 	</div>
+    	 </td>
+    	</tr>
+    	 <tr>
+    	 	<td colspan="3" id="td5">
+    	 			 <div id="onePar2Div_part2">
+		    	 		 <div id="txt2"></div>
+
+	    	 		 </div>
+    	 	</td>
+    	 </tr>
+    	 <tr>
+    	 	<td colspan="3" id="td6">
+     	        <div class="menuBee">
+	    	    	<input type="button" value="No flying objects, please ..." onclick="setTimeout('destructor()', 1000); window.scrollTo(0, 0)" id="firButton" />
+	    	    	<input type="button" value="M o r e&nbsp;&nbsp;!" onclick="moreBee()" id="secButton" />
+			    </div>
+    	 		<div id="copyright">&copy; ALL RIGHT RESERVED</div>
+    	 	</td>
+    	 </tr>
+    	</tbody>
+    	</table>
+
+
+        </div>
+
+</body>
+
+</html>
