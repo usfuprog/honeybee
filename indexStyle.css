@@ -18,7 +18,7 @@ body
 	background: linear-gradient(right, yellow, RGB(32, 255, 32));
 }
 
-#conteiner
+#conteinerQ
 {
 	margin: 0 auto;
 /*	height: 50%;*/
@@ -72,9 +72,18 @@ body
 
 .mainMenu
 {
-	margin: 0 auto;
+/*	margin: 0 auto;
 	width: 791px;
 	height: 50px;
+        border: 4px dotted red;
+*/
+
+/*margin: 0 auto;*/
+}
+
+.mainMenu div
+{
+    margin: 0 auto;
 }
 
 #copyright
@@ -85,6 +94,7 @@ body
 }
 
 /*----------------------------------------------------------------------------------------------------------*/
+/*
     ul, li
     {
 	    padding: 0;
@@ -155,17 +165,18 @@ body
 	
 	ul li ul li ul
 	{
-/*		width: 0px;*/
+		width: 0px;
 	}
 		
 	ul li ul li .superInnerMenuPath
 	{
-/*		margin-left: 6.87em;*/
-/*		margin-top: -38.4%;*/
+/*		margin-left: 6.87em;
+/*		margin-top: -38.4%;
 		margin-left: 151.5px;
-/*		margin-top: -58px;*/
+/*		margin-top: -58px;
 		margin-top: -37%;
 	}
+*/
 /*----------------------------------------------------------------------------------------------------------*/
 
 	#centralTable
@@ -174,7 +185,7 @@ body
 		border-radius: 100px;
 /*		text-align: center;*/
 /*		height: 50pt;*/
-		min-width: 900px;
+/*		min-width: 900px;*/
 		border-collapse: collapse;
 		margin-top: 10px;
 	}
@@ -242,6 +253,7 @@ body
 		padding: 32px 32px 32px 32px;
 		background: #e29903;
 		display: block;
+                box-sizing: content-box;
 	}
 	
 	
@@ -254,13 +266,13 @@ body
 
 	.superButtonLeft
 	{
-		float: left;
+/*		float: left;*/
 	}
 	
 
 	.superButtonRight
 	{
-		float: right;
+/*		float: right;*/
 	}
 	
 	.newsBlock
@@ -335,29 +347,31 @@ body
 		background-position: 50% 50%;
 		width: 22px;
 		height: 11px;
+                z-index: 100;
 	}
 	
 	.menuBee
 	{
-		text-align: center;
+            text-align: center;
 /*		margin-top: 444px;*/
-		border-top: 4px double white;
-		border-width: medium;
-		margin-top: 32px;
+            border-top: 4px double white;
+            border-width: medium;
+            margin-top: 32px;
 /*		height: 200px;
-		border: 2px solid red;
+            border: 2px solid red;
 */
 	}
 	
 	.menuBee input
 	{
-		width: 222px;
-		height: 24px;
-		font-style: italic;
-
-		cursor: pointer;
-		font-weight: bolder;
-		margin-top: 32px;
+/*            width: 222px;
+            height: 24px;*/
+            font-style: italic;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bolder;
+            margin-top: 32px;
+            border-radius: 3px;
 	}
 	
 	#firButton
@@ -413,14 +427,9 @@ body
 	 
 	 #startPos
 	 {
-/*		 border: 1px solid green;
+/*		 border: 1px solid green;*/
 		 width: 1px;
 		 height: 1px;
-/*		 position: normal;*/
-	 }
-	 
-	 li span, #menuDiv span
-	 {
-		 cursor: pointer;
-	 }
-	 
+		 position: normal;
+                 margin: 0 auto;
+	 }	 

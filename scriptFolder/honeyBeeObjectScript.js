@@ -1,9 +1,5 @@
 var bees=new Array();
 var beeQcnt=0;
-var borderTop=0;
-var borderRight=0;
-var borderBottom=0;
-var borderLeft=0;
 var correctStartPos=0;
 
 
@@ -75,7 +71,9 @@ function HoneyBee()
 	flyingBee.setAttribute("src", "imgFolder/honeybee.png");
 	flyingBee.setAttribute("alt", "highFly");
 	flyingBee.setAttribute("id", "testbee"+beeQcnt);
-	
+        flyingBee.setAttribute("class", "honeyBee");
+        
+	/*
 	var randNum=getRandNum(3);
 	if (randNum==1)
 	{
@@ -92,28 +90,33 @@ function HoneyBee()
 	{
 		this.direction="right";
 	}
-		var pv1=borderLeft;
-		var pv2=borderTop+164+correctStartPos;
-		var pv3=(borderRight-borderLeft-385)/2+correctStartPos;
-
-		pv1+=70+8+pv3;
-		flyingBee.style.left=pv1+"px";
-		flyingBee.style.top=pv2+"px";
-	
+        */
+	let img = document.getElementById("img");
+//        console.log(img.width, img.height, document.getElementById("td3").clientWidth);
+        
+        let pv1 = (document.getElementById("td3").clientWidth - img.width) / 2 ;
+        pv1 += Math.ceil(img.width * 0.17) + correctStartPos;
+        pv1 += "px";
+        
+        flyingBee.style.left=pv1;
+        flyingBee.style.top=Math.ceil(img.height * 0.27) + "px";
+        //alert(flyingBee.style.top);
+        
 	flyingBee.style.position="absolute";
+        
 	document.getElementById("startPos").appendChild(flyingBee);
 
 	this.id="testbee"+beeQcnt++;
 	this.intervalRef=null;
-	this.viewInfo=viewQinfo;
+//	this.viewInfo=viewQinfo;
 	
 
 }
 
-function viewQinfo()
-{
-	alert(this.direction+" ___ "+" ___ "+this.id);
-}
+//function viewQinfo()
+//{
+//	alert(this.direction+" ___ "+" ___ "+this.id);
+//}
 
 function actualCount()
 {
@@ -147,19 +150,6 @@ function destructor()
 		bees.shift();
 
 }
-
-window.addEventListener("resize", getCoords);
-window.addEventListener("load", getCoords);
-
-function getCoords()
-{
-	borderTop=document.getElementById("td1").clientHeight;
-	borderRight=document.getElementById("td2").clientWidth+document.getElementById("td3").clientWidth;
-	borderBottom=document.getElementById("td3").clientHeight+borderTop;
-	borderLeft=document.getElementById("td2").clientWidth;
-	var pv=window.screen.width;
-
-};
 
 window.addEventListener("load", function()
 {
